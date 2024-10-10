@@ -14,10 +14,10 @@ export default defineConfig({
   build: {
     lib: {
       entry: "./src/main.ts",
-      name: "StReport",
+      name: "{{namespace}}",
       fileName: (format) => `index.${format}.js`,
     },
-    minify: 'terser',
+    minify: "terser",
     terserOptions: {
       compress: {
         // drop_console: true,
@@ -50,7 +50,7 @@ export default defineConfig({
           copyDtsFiles: true,
           rollupTypes: true,
           include: ["src/**/*.ts"],
-          tsconfigPath: './tsconfig.json' 
+          tsconfigPath: "./tsconfig.json",
         }),
       ],
     },

@@ -1,5 +1,5 @@
 {
-  "name": "vite-ts-sdk-template",
+  "name": "{{name}}",
   "exports": {
     "require": "./lib/index.cjs.js",
     "import": "./lib/index.esm.js"
@@ -9,6 +9,7 @@
   "version": "0.0.0",
   "type": "module",
   "types": "./types/index.d.ts",
+  "description": "{{description}}",
   "scripts": {
     "dev": "tsc && vite build --watch --minify=false",
     "build": "tsc && vite build",
