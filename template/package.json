@@ -14,7 +14,9 @@
     "dev": "tsc && vite build --watch --minify=false",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "analyze": "tsc && vite build -- --report"
+    "analyze": "tsc && vite build -- --report",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "format": "prettier --write 'src/**/*.{ts,tsx,js,json}'"
   },
   "publishConfig": {
     "registry": "https://nexus.ushareit.me/repository/npm-hosted/"
@@ -23,10 +25,15 @@
   "devDependencies": {
     "@babel/preset-env": "^7.25.7",
     "@rollup/plugin-babel": "^6.0.4",
+    "@typescript-eslint/eslint-plugin": "^8.8.1",
+    "@typescript-eslint/parser": "^8.8.1",
+    "eslint": "^9.12.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
     "rollup-plugin-bundle-analyzer": "^1.6.6",
-    "typescript": "^5.6.3",
+    "typescript": "^5.5.4",
     "vite": "^5.4.8",
-    "vite-plugin-dts": "^4.2.3",
     "vite-plugin-dts-canary": "^4.2.3-beta.2"
   },
   "files": [
