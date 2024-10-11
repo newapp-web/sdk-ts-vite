@@ -2,10 +2,12 @@
   "name": "{{name}}",
   "exports": {
     "require": "./lib/index.cjs.js",
-    "import": "./lib/index.esm.js"
+    "import": "./lib/index.es.js",
+    "browser": "./lib/index.umd.js"
   },
   "main": "./lib/index.cjs.js",
   "module": "./lib/index.esm.js",
+  "browser": "./lib/index.umd.js",
   "version": "0.0.0",
   "type": "module",
   "types": "./types/index.d.ts",

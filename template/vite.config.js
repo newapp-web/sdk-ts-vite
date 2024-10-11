@@ -16,18 +16,17 @@ export default defineConfig({
       entry: "./src/main.ts",
       name: "{{namespace}}",
       fileName: (format) => `index.${format}.js`,
+      formats: ["es", "cjs", "umd"],
     },
+    outDir: "lib",
     minify: "terser",
     terserOptions: {
       compress: {
-        // drop_console: true,
-        // drop_debugger: true
+        drop_console: true,
+        drop_debugger: true
       },
     },
     rollupOptions: {
-      output: {
-        dir: "lib",
-      },
       // 使用Babel转译你的代码
       plugins: [
         babel({
