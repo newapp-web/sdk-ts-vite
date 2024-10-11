@@ -39,6 +39,7 @@
     "vite-plugin-dts-canary": "^4.2.3-beta.2"
   },
   "files": [
-    "lib"
+    "lib",
+    "types"
   ]
 }
