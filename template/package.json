@@ -17,6 +17,7 @@
   "types": "./types/index.d.ts",
   "scripts": {
     "dev": "tsc && vite build --watch --minify=false",
+    "prebuild": "rimraf types",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "analyze": "tsc && vite build -- --report",
@@ -39,7 +40,8 @@
     "rollup-plugin-bundle-analyzer": "^1.6.6",
     "typescript": "^5.5.4",
     "vite": "^5.4.8",
-    "vite-plugin-dts-canary": "^4.2.3-beta.2"
+    "vite-plugin-dts-canary": "^4.2.3-beta.2",
+    "rimraf": "^6.0.1"
   },
   "files": [
     "lib",
